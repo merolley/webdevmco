@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment System UI</title>
+    <link rel="stylesheet" href="mco.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>📅 Appointment Manager</h1>
+            <p>Fill out the form below to secure your slot.</p>
+        </header>
+
+        <section class="booking-card">
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="e.g. jude raganit" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Service Type</label>
+                    <select>
+                        <option>General Consultation</option>
+                        <option>Technical Support</option>
+                        <option>Billing Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Time</label>
+                        <input type="time" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Confirm Booking</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h3>Recent Bookings</h3>
+            <table class="appointment-table">
+                <thead>
+                    <tr>
+                        <th>Client</th>
+                        <th>Service</th>
+                        <th>Date & Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>jude raganit</td>
+                        <td>Technical Support</td>
+                        <td>Oct 24, 10:30 AM</td>
+                        <td><span class="status confirmed">Confirmed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>
+
